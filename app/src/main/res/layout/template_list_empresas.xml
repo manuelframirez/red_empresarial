@@ -22,6 +22,8 @@
                android:layout_width="match_parent"
                android:layout_height="300dp"
                android:background="#ffffff"
+               android:scaleType="centerInside"
+               android:paddingBottom="40dp"
                />
            <TextView
                android:id="@+id/titulo_empresa"

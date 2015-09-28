@@ -51,7 +51,7 @@ public class EmpresasAdapter extends BaseAdapter {
 
         if (e.getNombre().equals("Kcumen")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.kcumen).into(img);
         }
 
         if (e.getNombre().equals("Ecotecma")){
@@ -61,12 +61,12 @@ public class EmpresasAdapter extends BaseAdapter {
 
         if (e.getNombre().equals("SmartSoft Play")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.smartsoft).into(img);
         }
 
         if (e.getNombre().equals("Inteligente Mente")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.inteligentemente).into(img);
         }
 
         if (e.getNombre().equals("Super Natural")){
@@ -76,17 +76,17 @@ public class EmpresasAdapter extends BaseAdapter {
 
         if (e.getNombre().equals("Ideti")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.ideti).into(img);
         }
 
         if (e.getNombre().equals("The Big Bang Company")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.bigbang).into(img);
         }
 
         if (e.getNombre().equals("Buxtar")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.buxtar).into(img);
         }
 
         if (e.getNombre().equals("Celeste")){
@@ -101,12 +101,12 @@ public class EmpresasAdapter extends BaseAdapter {
 
         if (e.getNombre().equals("EGOB")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.egob).into(img);
         }
 
         if (e.getNombre().equals("Eteknik")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.eteknik).into(img);
         }
 
         if (e.getNombre().equals("Health")){
@@ -116,57 +116,57 @@ public class EmpresasAdapter extends BaseAdapter {
 
         if (e.getNombre().equals("Human")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.human).into(img);
         }
 
         if (e.getNombre().equals("Inet")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.inet).into(img);
         }
 
         if (e.getNombre().equals("Jump")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.jump).into(img);
         }
 
         if (e.getNombre().equals("Sadmin")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.sadmin).into(img);
         }
 
         if (e.getNombre().equals("Somos")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.somos).into(img);
         }
 
         if (e.getNombre().equals("Sunset")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.sunset).into(img);
         }
 
         if (e.getNombre().equals("Tics")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.tics).into(img);
         }
 
         if (e.getNombre().equals("Taio")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.tics).into(img);
         }
 
         if (e.getNombre().equals("Totems Consulting")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo);
+            Picasso.with(context).load(R.drawable.totems);
         }
 
         if (e.getNombre().equals("Vigilax")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.vigilax).into(img);
         }
 
         if (e.getNombre().equals("Winet")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.logo).into(img);
+            Picasso.with(context).load(R.drawable.winet).into(img);
         }
 
 
