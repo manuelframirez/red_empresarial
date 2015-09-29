@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.kcumendigital.redempresarial.animations.DepthPageTranformer;
+import com.kcumendigital.redempresarial.models.Empresas;
 
 
 public class TabsActivity extends AppCompatActivity {
@@ -22,6 +23,10 @@ public class TabsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tabs);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        Bundle bundle = getIntent().getExtras();
+        Long id_empresa = bundle.getLong("id_item_click");
+        Empresas e = Empresas.findEmpresaById(this,id_empresa);
+
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
@@ -30,7 +35,8 @@ public class TabsActivity extends AppCompatActivity {
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
 
-        PagerAdapter adapter = new com.kcumendigital.redempresarial.adapters.PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
+
+        PagerAdapter adapter = new com.kcumendigital.redempresarial.adapters.PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount(),e);
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         viewPager.setPageTransformer(true , new DepthPageTranformer());

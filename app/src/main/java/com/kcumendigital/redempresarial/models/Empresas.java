@@ -3,6 +3,7 @@ package com.kcumendigital.redempresarial.models;
 import android.content.Context;
 
 import com.kcumendigital.redempresarial.EmpresasActivity;
+import com.kcumendigital.redempresarial.TabsActivity;
 import com.kcumendigital.redempresarial.Util.Util;
 import com.orm.SugarContext;
 import com.orm.SugarRecord;
@@ -198,5 +199,12 @@ public class Empresas extends SugarRecord {
         SugarContext.init(context);
         List<Empresas> data = Empresas.listAll(Empresas.class);
         return data;
+    }
+
+    public static Empresas findEmpresaById(Context context, Long id_empresa) {
+        SugarContext.init(context);
+        Empresas e = Empresas.findById(Empresas.class,id_empresa);
+        return e;
+
     }
 }
