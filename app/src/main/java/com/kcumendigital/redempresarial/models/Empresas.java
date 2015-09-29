@@ -50,7 +50,7 @@ public class Empresas extends SugarRecord {
 
             Empresas kcumen = new Empresas();
             kcumen.setNombre("Kcumen");
-            kcumen.setDescripcion("Esta es la descripción de Kcumen");
+            kcumen.setDescripcion("En Kcumen Digital nos esforzamos por brindarles la mejores solución a medida, es por esto que desarrollamos el producto en base a sus necesidades con las mejores herramientas; creatividad e innovación.");
             kcumen.setImagen(Util.KCUMEN);
             kcumen.save();
 
@@ -63,7 +63,7 @@ public class Empresas extends SugarRecord {
 
             Empresas smartsoftPlay = new Empresas();
             smartsoftPlay.setNombre("SmartSoft Play");
-            smartsoftPlay.setDescripcion("esta es la descripción de SmartSoft Play  ");
+            smartsoftPlay.setDescripcion("Somos un estudio de desarrollo de aplicaciones de entretenimiento. Nuestra Misión: Sencillez y creatividad para entretener a la gente.");
             smartsoftPlay.setImagen(Util.SMARTSOFTPLAY);
             smartsoftPlay.save();
 
@@ -153,13 +153,13 @@ public class Empresas extends SugarRecord {
 
             Empresas somos = new Empresas();
             somos.setNombre("Somos");
-            somos.setDescripcion("esta es la descripción de Somos");
+            somos.setDescripcion("Ofrecer soluciones TIC (Tecnologías de la Información y las Comunicaciones), integrales y de excelencia a nivel local y global, para responder a las necesidades de comunicación, información, conocimiento, movilidad y ubicuidad de los seres humanos y sus organizaciones. SoMoS construye sus soluciones a partir de procesos de innovación y desarrollo que emprende al interior de la organización o en alianza con centros de investigación e instituciones de educación superior regionales e internacionales.");
             somos.setImagen(Util.SOMOS);
             somos.save();
 
             Empresas sunset = new Empresas();
             sunset.setNombre("Sunset");
-            sunset.setDescripcion("esta es la descripción de Sunset");
+            sunset.setDescripcion("SUNSET SOFTWARE HOUSE S.A.S es una empresa de software comprometida con la calidad y las mejores prácticas de Ingeniería de Software, enfocada en acompañar y solucionar las necesidades de nuestros clientes, tanto en etapas específicas del desarrollo como en soluciones complejas y a la medida, buscando siempre ofrecer la mejor relación costo-beneficio. Así mismo, es una empresa generadora de empleo para profesionales y conocimiento para progreso del país.");
             sunset.setImagen(Util.SUNSET);
             sunset.save();
 
@@ -171,7 +171,7 @@ public class Empresas extends SugarRecord {
 
             Empresas taio = new Empresas();
             taio.setNombre("Taio");
-            taio.setDescripcion("esta es la descripción de Taio");
+            taio.setDescripcion("Nowadays, the technology is changing quickly; faster and smaller devices are driving the future of people daily lives. According to this landscape, the efforts of companies like Intel® to improve its design and hardware developments are very important so these forecasts become a reality. However, this is only a piece of the puzzle because the firmware development and Integrated Development Environments production are the required support to close these efforts to developers and common people: this is the target of TaIO Systems.");
             taio.setImagen(Util.TAIO);
             taio.save();
 
