@@ -165,7 +165,7 @@ public class Empresas extends SugarRecord {
 
             Empresas tics = new Empresas();
             tics.setNombre("Tics");
-            tics.setDescripcion("esta es la descripción de Tics");
+            tics.setDescripcion("Somos una empresa conformada por profesionales especialistas en tecnologías de la información y las comunicaciones (TICS) que surgió para dar soluciones tecnológicas a medianas y pequeñas empresas o emprendedores, ofreciendo experiencia, calidad, flexibilidad y optimización de los recursos tecnológicos. Nos ponemos a su disposición con nuestro enfoque directo a la búsqueda de éxito. El desarrollo de la comunicación y la gestión de proyectos. ");
             tics.setImagen(Util.TICS);
             tics.save();
 
@@ -183,7 +183,7 @@ public class Empresas extends SugarRecord {
 
             Empresas vigilax = new Empresas();
             vigilax.setNombre("Vigilax");
-            vigilax.setDescripcion("esta es la descripción de Vigilax");
+            vigilax.setDescripcion("Ayudar a nuestros clientes a fortalecer sus procesos empresariales mediante la utilización de herramientas tecnológicas modernas e intuitivas. ");
             vigilax.setImagen(Util.VIGILAX);
             vigilax.save();
 
