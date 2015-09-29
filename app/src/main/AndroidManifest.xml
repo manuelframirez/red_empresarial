@@ -20,6 +20,10 @@
             android:name=".EmpresasActivity"
             android:label="@string/title_activity_empresas" >
         </activity>
+        <activity
+            android:name=".TabsActivity"
+            android:label="@string/title_activity_empresas" >
+        </activity>
 
         <meta-data
             android:name="DATABASE"
