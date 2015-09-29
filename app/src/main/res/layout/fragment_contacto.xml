@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kcumendigital.redempresarial.fragments.ContactoFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/contacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Contacto"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/correo_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_mails"
+            android:layout_below="@id/contacto"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="infor@kcumendigital.com"
+            android:textSize="20sp"
+            android:layout_below="@id/contacto"
+            android:layout_toRightOf="@id/correo_img"
+            />
+
+        <ImageView
+            android:id="@+id/phone_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone"
+            android:layout_below="@id/correo_img"
+            android:layout_margin="20dp"
+            />
+
+        <TextView
+            android:id="@+id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="infor@kcumendigital.com"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/phone_img"
+            android:layout_below="@id/correo"
+            android:layout_marginTop="54dp"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

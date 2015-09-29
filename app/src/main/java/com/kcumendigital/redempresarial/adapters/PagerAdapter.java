@@ -1,9 +1,11 @@
 package com.kcumendigital.redempresarial.adapters;
 
+
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.kcumendigital.redempresarial.fragments.ContactoFragment;
 import com.kcumendigital.redempresarial.fragments.DescriptionFragment;
 import com.kcumendigital.redempresarial.fragments.NumberPageFragment;
 import com.kcumendigital.redempresarial.fragments.PortafolioFragment;
@@ -42,7 +44,7 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
 
             case 2:
-                NumberPageFragment tab3 = new NumberPageFragment();
+                ContactoFragment tab3 = new ContactoFragment();
                 tab3.init(position);
                 return tab3;
 
