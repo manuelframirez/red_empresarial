@@ -18,6 +18,15 @@ public class Empresas extends SugarRecord {
     String nombre;
     String descripcion;
     Integer imagen;
+    String url;
+//region Getters and Setters
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
     public Integer getImagen() {
         return imagen;
@@ -52,6 +61,7 @@ public class Empresas extends SugarRecord {
             kcumen.setNombre("Kcumen");
             kcumen.setDescripcion("En Kcumen Digital nos esforzamos por brindarles la mejores solución a medida, es por esto que desarrollamos el producto en base a sus necesidades con las mejores herramientas; creatividad e innovación.");
             kcumen.setImagen(Util.KCUMEN);
+            kcumen.setUrl("http://www.kcumendigital.com");
             kcumen.save();
 
             Empresas ecotecma = new Empresas();
@@ -207,4 +217,6 @@ public class Empresas extends SugarRecord {
         return e;
 
     }
+
+    //endregion
 }
