@@ -5,11 +5,11 @@
     tools:context="com.kcumendigital.redempresarial.fragments.DescriptionFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <android.support.v7.widget.CardView android:layout_width="match_parent"
+    <FrameLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:layout_marginLeft="@dimen/margin_left"
-        app:cardElevation="4dp"
         >
         <LinearLayout
             android:orientation="vertical"
@@ -19,7 +19,8 @@
                 android:id="@+id/imagenempresa"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
-                android:scaleType="fitCenter"
+                android:scaleType="center"
+                android:layout_marginTop="10dp"
                 />
             <ScrollView
                 android:layout_width="match_parent"
@@ -40,7 +41,7 @@
 
 
 
-    </android.support.v7.widget.CardView>
+    </FrameLayout>
 
 
 </RelativeLayout>

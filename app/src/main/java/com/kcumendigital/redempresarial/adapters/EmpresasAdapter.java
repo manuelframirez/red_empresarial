@@ -51,7 +51,7 @@ public class EmpresasAdapter extends BaseAdapter {
 
         if (e.getNombre().equals("Kcumen")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.kcumen).into(img);
+            Picasso.with(context).load(R.drawable.kcumendigitallogo).into(img);
         }
 
         if (e.getNombre().equals("Ecotecma")){
