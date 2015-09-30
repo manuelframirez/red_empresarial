@@ -7,8 +7,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ListView;
 
 import com.kcumendigital.redempresarial.adapters.EmpresasAdapter;
 import com.kcumendigital.redempresarial.models.Empresas;
@@ -20,6 +22,9 @@ public class EmpresasActivity extends AppCompatActivity implements  AdapterView.
     GridView list;
     EmpresasAdapter adapter;
     List<Empresas> data;
+    private static final int HIDE_THRESHOLD = 20;
+    private int scrolledDistance = 0;
+    private boolean controlsVisible = true;
 
 
     @Override
@@ -56,4 +61,6 @@ public class EmpresasActivity extends AppCompatActivity implements  AdapterView.
          startActivity(intent);
 
     }
+
+
 }

@@ -41,9 +41,9 @@ public class TabsActivity extends AppCompatActivity {
 
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Descripción"));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_group_work_white_24dp));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_work_white_24dp));
-        tabLayout.addTab(tabLayout.newTab().setText("Contacto"));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_call_white_24dp));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
 
