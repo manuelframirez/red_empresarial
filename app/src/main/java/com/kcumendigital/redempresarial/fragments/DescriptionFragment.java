@@ -36,7 +36,7 @@ public class DescriptionFragment extends android.support.v4.app.Fragment {
 
         if (e.getNombre().equals("Kcumen")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(getActivity()).load(R.drawable.kcumen).into(img);
+            Picasso.with(getActivity()).load(R.drawable.kcumendigitallogo).into(img);
         }
 
         if (e.getNombre().equals("Ecotecma")){

@@ -42,7 +42,7 @@ public class PortafolioFragment extends android.support.v4.app.Fragment implemen
         View v =  inflater.inflate(R.layout.fragment_portafolio, container, false);
         if (e.getNombre().equals("Kcumen")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(getActivity()).load(R.drawable.kcumen).into(img);
+            Picasso.with(getActivity()).load(R.drawable.kcumendigitallogo).into(img);
         }
 
         if (e.getNombre().equals("Ecotecma")){

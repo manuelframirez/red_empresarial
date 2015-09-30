@@ -3,12 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.kcumendigital.redempresarial.fragments.ContactoFragment">
+    tools:context="com.kcumendigital.redempresarial.fragments.ContactoFragment"
+    >
 
     <ImageView
         android:id="@+id/imagenempresa"
         android:layout_width="match_parent"
-        android:layout_height="150dp" />
+        android:layout_height="130dp"
+        android:scaleType="center"
+        android:layout_marginTop="20dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
