@@ -6,6 +6,7 @@
     tools:context="com.kcumendigital.redempresarial.fragments.ContactoFragment">
 
     <ImageView
+        android:id="@+id/imagenempresa"
         android:layout_width="match_parent"
         android:layout_height="150dp" />
 

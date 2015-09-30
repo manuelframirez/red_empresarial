@@ -19,7 +19,47 @@ public class Empresas extends SugarRecord {
     String descripcion;
     Integer imagen;
     String url;
-//region Getters and Setters
+    String correo;
+    String numero;
+    String numero2;
+    String numero3;
+
+
+
+
+    //region Getters and Setters
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public String getNumero2() {
+        return numero2;
+    }
+
+    public void setNumero2(String numero2) {
+        this.numero2 = numero2;
+    }
+
+    public String getNumero3() {
+        return numero3;
+    }
+
+    public void setNumero3(String numero3) {
+        this.numero3 = numero3;
+    }
+
     public String getUrl() {
         return url;
     }
@@ -62,8 +102,9 @@ public class Empresas extends SugarRecord {
             kcumen.setDescripcion("En Kcumen Digital nos esforzamos por brindarles la mejores solución a medida, es por esto que desarrollamos el producto en base a sus necesidades con las mejores herramientas; creatividad e innovación.");
             kcumen.setImagen(Util.KCUMEN);
             kcumen.setUrl("http://www.kcumendigital.com");
+            kcumen.setNumero("+573182572324");
+            kcumen.setCorreo("kcumen@gmail.com");
             kcumen.save();
-
             Empresas ecotecma = new Empresas();
             ecotecma.setNombre("Ecotecma");
             ecotecma.setDescripcion("Ecotecma S.A.S es una empresa que opera en el marco del desarrollo sostenible haciendo uso de las tecnologías de la información y la comunicación TIC, y que presta servicios dirigidos a la gestión ambiental y fitosanitaria. Ecotecma S.A.S tiene por objeto la adquisición, generación, procesamiento, análisis e integración de información relevante para atender las necesidades de los diferentes sectores, brindando soporte a los procesos de toma de decisiones en las entidades públicas y privadas para el mejoramiento de su productividad, incremento de la competitividad y la implementación de estrategias de prevención, adaptación y mitigación frente a eventos que afecten sus procesos.");

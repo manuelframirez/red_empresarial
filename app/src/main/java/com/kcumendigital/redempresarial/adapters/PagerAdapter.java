@@ -45,7 +45,7 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
             case 2:
                 ContactoFragment tab3 = new ContactoFragment();
-                tab3.init(position);
+                tab3.init(e);
                 return tab3;
 
             default:
