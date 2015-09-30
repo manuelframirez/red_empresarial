@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.kcumendigital.redempresarial.animations.DepthPageTranformer;
 import com.kcumendigital.redempresarial.models.Empresas;
@@ -23,15 +24,26 @@ public class TabsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tabs);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         Bundle bundle = getIntent().getExtras();
         Long id_empresa = bundle.getLong("id_item_click");
         Empresas e = Empresas.findEmpresaById(this,id_empresa);
+        getSupportActionBar().setTitle(e.getNombre());
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationIcon(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
 
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 2"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 3"));
+        tabLayout.addTab(tabLayout.newTab().setText("Descripción"));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_work_white_24dp));
+        tabLayout.addTab(tabLayout.newTab().setText("Contacto"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
 
