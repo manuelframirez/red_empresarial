@@ -50,8 +50,6 @@ public class EmpresasActivity extends AppCompatActivity implements  AdapterView.
 
     }
 
-
-
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
          Long id_item_click = data.get(position).getId();
