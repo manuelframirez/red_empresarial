@@ -1,47 +1,52 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.kcumendigital.redempresarial.fragments.DescriptionFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:layout_marginLeft="@dimen/margin_left"
-        >
+        android:orientation="vertical">
+
         <LinearLayout
-            android:orientation="vertical"
+            android:id="@+id/contenedor_img"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
+
             <ImageView
                 android:id="@+id/imagenempresa"
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:scaleType="center"
+                android:layout_height="@dimen/height_fragment_img"
                 android:layout_marginTop="10dp"
-                />
-            <ScrollView
+                android:scaleType="center" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/description_fragment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/size_text_description"
-                    android:text="descripcion"
+                    android:paddingBottom="10dp"
                     android:paddingTop="10dp"
-                    />
-            </ScrollView>
-
-
-        </LinearLayout>
-
-
-
-    </FrameLayout>
+                    android:text="descripcion"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/size_text_description" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 
 
 </RelativeLayout>

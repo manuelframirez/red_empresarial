@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imagenempresa"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="@dimen/height_fragment_img"
         android:scaleType="center"
         android:layout_marginTop="20dp"/>
 

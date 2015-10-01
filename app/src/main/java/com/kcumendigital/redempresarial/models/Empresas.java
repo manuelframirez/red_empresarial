@@ -23,6 +23,7 @@ public class Empresas extends SugarRecord {
     String numero;
     String numero2;
     String numero3;
+    String portafolio;
 
 
 
@@ -92,6 +93,10 @@ public class Empresas extends SugarRecord {
         this.descripcion = descripcion;
     }
 
+    public String getPortafolio() {return portafolio;}
+
+    public void setPortafolio(String portafolio) {this.portafolio = portafolio;}
+
     public static void init(Context context) {
         SugarContext.init(context);
 
@@ -103,7 +108,8 @@ public class Empresas extends SugarRecord {
             kcumen.setImagen(Util.KCUMEN);
             kcumen.setUrl("http://www.kcumendigital.com");
             kcumen.setNumero("+573182572324");
-            kcumen.setCorreo("kcumen@gmail.com");
+            kcumen.setCorreo("contacto@kcumendigital.com");
+            kcumen.setPortafolio("http://kcumendigital.com/portafolio.pdf");
             kcumen.save();
 
             Empresas ecotecma = new Empresas();
@@ -286,7 +292,7 @@ public class Empresas extends SugarRecord {
 
             Empresas totems = new Empresas();
             totems.setNombre("Totems Consulting");
-            totems.setDescripcion("esta es la descripción de Totems");
+            totems.setDescripcion("Creamos espacios de colaboración para co-crear y compartir conocimiento, co-aprender, co-innovar, con sus clientes, aliados y demás stakeholders. Identificación de conocimiento Corporativo: Identificamos activos de conocimiento clave para el desarrollo de su negocio.");
             totems.setImagen(Util.TOTEMS);
             totems.setUrl("http://www.totemsconsulting.com");
             totems.setNumero("+573014129947");

@@ -156,7 +156,7 @@ public class EmpresasAdapter extends BaseAdapter {
 
         if (e.getNombre().equals("Totems Consulting")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(context).load(R.drawable.totems);
+            Picasso.with(context).load(R.drawable.totems).into(img);
         }
 
         if (e.getNombre().equals("Vigilax")){

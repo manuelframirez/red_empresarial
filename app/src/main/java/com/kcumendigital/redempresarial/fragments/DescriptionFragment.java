@@ -3,9 +3,12 @@ package com.kcumendigital.redempresarial.fragments;
 
 import android.os.Bundle;
 import android.app.Fragment;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -141,7 +144,7 @@ public class DescriptionFragment extends android.support.v4.app.Fragment {
 
         if (e.getNombre().equals("Totems Consulting")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(getActivity()).load(R.drawable.totems);
+            Picasso.with(getActivity()).load(R.drawable.totems).into(img);
         }
 
         if (e.getNombre().equals("Vigilax")){
@@ -159,6 +162,4 @@ public class DescriptionFragment extends android.support.v4.app.Fragment {
 
         return v;
     }
-
-
 }

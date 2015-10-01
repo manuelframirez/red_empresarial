@@ -146,7 +146,7 @@ public class ContactoFragment extends Fragment {
 
         if (e.getNombre().equals("Totems Consulting")){
             ImageView img = (ImageView) v.findViewById(R.id.imagenempresa);
-            Picasso.with(getActivity()).load(R.drawable.totems);
+            Picasso.with(getActivity()).load(R.drawable.totems).into(img);
         }
 
         if (e.getNombre().equals("Vigilax")){
