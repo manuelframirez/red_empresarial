@@ -1,20 +1,17 @@
 package com.kcumendigital.redempresarial;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ListView;
 
 import com.kcumendigital.redempresarial.adapters.EmpresasAdapter;
 import com.kcumendigital.redempresarial.models.Empresas;
 
+import java.util.Collections;
 import java.util.List;
 
 public class EmpresasActivity extends AppCompatActivity implements  AdapterView.OnItemClickListener {
@@ -46,6 +43,7 @@ public class EmpresasActivity extends AppCompatActivity implements  AdapterView.
 
         list = (GridView) findViewById(R.id.gridview);
         data = Empresas.getAllEmpresas(this);
+        Collections.shuffle(data);
         adapter = new EmpresasAdapter(this,data);
         list.setAdapter(adapter);
         list.setOnItemClickListener(this);
